@@ -80,7 +80,7 @@
                                 <div class="limit-box">
                                     <nav class="main-menu">
                                         <ul class="menu-area-main">
-                                            <li class="active"> <a href="#game">Game</a> </li>
+                                            <li> <a href="#games">Game</a> </li>
                                             <li> <a href="#software">Software</a> </li>
                                             <li> <a href="#about">About</a> </li>
                                             <li> <a href="#testimonial">Testimonial</a> </li>
@@ -412,6 +412,45 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    
+    
+        <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?10268';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#4dc247",
+          "ctaText":"",
+          "borderRadius":"25",
+          "marginLeft":"0",
+          "marginBottom":"50",
+          "marginRight":"50",
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"DEVIOR",
+          "brandSubTitle":"Platform for games & softwares",
+          "brandImg":"https://vedprakashsuman777.github.io/DEVIOR/images/logo1.png",
+          "welcomeText":"Hello Devior,\n",
+          "messageText":"Hello Devior,%0A",
+          "backgroundColor":"#212626",
+          "ctaText":"Start Chat",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"7873150592"
+      }
+    };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
 
 </body>
 
